@@ -39,7 +39,5 @@ class NewVisitorTest(unittest.TestCase):  #
 
         # Satisfied, she goes back to sleep.
 
-        browser.quit()
-
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
