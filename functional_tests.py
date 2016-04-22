@@ -33,8 +33,11 @@ class NewVisitorTest(unittest.TestCase):  #
         inputbox.send_keys('Buy peacock feathers')
 
         # When she hits enter, the page updates, and now it lists
-        # "1: Buy peacock feathers" as an item in a to-di list
+        # "1: Buy peacock feathers" as an item in a to-do list
         inputbox.send_keys(Keys.ENTER)
+
+#        import time
+#        time.sleep(10)
 
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
